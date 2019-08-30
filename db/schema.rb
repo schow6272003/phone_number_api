@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190830053723) do
+ActiveRecord::Schema.define(version: 20190830092511) do
 
   create_table "phones", force: :cascade do |t|
     t.string "city"
-    t.integer "number"
+    t.integer "number", limit: 8
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["number"], name: "index_phones_on_number", unique: true
