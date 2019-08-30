@@ -1,25 +1,40 @@
-# README
+# Overview
+_____________________________________________________________
+This api is to allocate phone number between range of  111-111-1111 and 999-999-9999 to end user in a city. The allocated phone number has to be unique, and can not be assigned twice. 
+# Setup
+______________________________________________________________
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Installation
+Install gems
+```sh
+$ bundle install
+```
+Migrate tables on database
+```sh
+$ rake db:migrate
+```
+#### Start Up Server
+```sh
+$ rails -s 
+```
+#### Unit Test
+```sh
+$ rspec
+```
 
-Things you may want to cover:
+# Usage
+______________________________________________________________
+## Parameters
+| Field     | Description |  Type | Option |
+| ----------- | ----------- |----------- |----------- |
+| city     | City       |  String |  required |
+| phone_number  |  Phone Number    | Integer |  Optional
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# phone_number_api
+#### Url
+``
+localhost:3000/api/v1/phone_numbers
+``
+#### Method
+``
+Post
+``
