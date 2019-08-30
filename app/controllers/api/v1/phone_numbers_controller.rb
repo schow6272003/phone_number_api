@@ -37,7 +37,6 @@ module Api
               if save_result.save
                 render json: {"status" => "success", "message" => "Successfully Created!"}, status: 201
               else
-                p "hello"
                 render json: {"status" => "error", "message" => save_result.errors}, status: :unprocessable_entit
               end 
             end 
