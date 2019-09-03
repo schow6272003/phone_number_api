@@ -24,17 +24,62 @@ $ rspec
 
 # Usage
 ______________________________________________________________
-## Parameters
-| Field     | Description |  Type | Option |
+
+## Allot phone number to user
+### Parameters
+| Field     | Description |  Type | example | Option |
 | ----------- | ----------- |----------- |----------- |
-| city     | City       |  String |  required |
-| phone_number  |  Phone Number    | Integer |  Optional
+| phone_number  |  Phone Number    | string | "312-111-2222 | required
 
 #### Url
 ``
-localhost:3000/api/v1/phone_numbers
+localhost:3000/api/v1/phone_numbers/assign
 ``
 #### Method
 ``
 Post
 ``
+## To look up number
+### Parameters
+| Field     | Description |  Type | example | Option |
+| ----------- | ----------- |----------- |----------- |
+| phone_number  |  Phone Number    | string | "312-111-2222 | required
+
+#### Url
+``
+localhost:3000/api/v1/phone_numbers/look_up
+``
+#### Method
+``
+Get
+``
+
+## To delete a phone number
+### Parameters
+| Field     | Description |  Type | example | Option |
+| ----------- | ----------- |----------- |----------- |
+| phone_number  |  Phone Number    | string | "312-111-2222 | required
+
+#### Url
+``
+localhost:3000/api/v1/phone_numbers/delete
+``
+#### Method
+``
+Post
+``
+
+## To display all of the allotted phone numbers
+### Parameters
+``
+none 
+``
+#### Url
+``
+localhost:3000/api/v1/phone_numbers/all_phones_numbers
+``
+#### Method
+``
+Get
+``
+
