@@ -4,8 +4,10 @@ Rails.application.routes.draw do
     namespace :v1 do 
         resources :phone_numbers do 
            collection do
+             get :look_up
              get :all_phones_numbers
              post :assign
+             post :delete
            end 
         end 
      end 
