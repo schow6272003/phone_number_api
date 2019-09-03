@@ -28,8 +28,8 @@ ______________________________________________________________
 ## Allot phone number to user
 ### Parameters
 | Field     | Description |  Type | example | Option |
-| ----------- | ----------- |----------- |----------- |
-| phone_number  |  Phone Number    | string | "312-111-2222 | required
+| ----------- | ----------- |----------- |----------- |----------- |
+| phone_number  |  Phone Number    | string | "312-111-2222" | required
 
 #### Url
 ``
@@ -42,8 +42,8 @@ Post
 ## To look up number
 ### Parameters
 | Field     | Description |  Type | example | Option |
-| ----------- | ----------- |----------- |----------- |
-| phone_number  |  Phone Number    | string | "312-111-2222 | required
+| ----------- | ----------- |----------- |----------- |----------- |
+| phone_number  |  Phone Number    | string | "312-111-2222" | required
 
 #### Url
 ``
@@ -57,8 +57,8 @@ Get
 ## To delete a phone number
 ### Parameters
 | Field     | Description |  Type | example | Option |
-| ----------- | ----------- |----------- |----------- |
-| phone_number  |  Phone Number    | string | "312-111-2222 | required
+| ----------- | ----------- |----------- |----------- |----------- |
+| phone_number  |  Phone Number    | string | "312-111-2222" | required
 
 #### Url
 ``
@@ -82,4 +82,3 @@ localhost:3000/api/v1/phone_numbers/all_phones_numbers
 ``
 Get
 ``
-
